@@ -1,0 +1,47 @@
+#Configuration du plugin SimpleRTP
+#EN: Configuration of SimpleRTP
+
+#Défini si l'utilisateur devra attendre un certain temps ou non entre 2 RandomTP. Mettre sur true pour activer le cooldown, et sur false pour le desaciver.
+#EN: Define whether the user will have to wait a certain amount of time or not between 2 RandomTPs. Set to true to enable cooldown, and to false to disable it.
+use-cooldown: true
+
+#Si l'option si dessus est défini sur true, cela défini le temps que l'utilisateur devra attendre entre 2 /rtp ( en secondes ).
+#EN: If the option above is set to true, this defines the time the user will have to wait between 2 /rtp (in seconds).
+randomtp-cooldown: 10
+
+#Défini si le plugin utilise Vault ( = Systéme economique ) pour fonctionner. Mettre sur true pour définir un prix a votre RTP, sur false si vous souhaitez le desaciver.
+#EN: Defined if the plugin uses Vault (= Economic System) to work. Set to true to set a price for your RTP, to false if you want to disable it.
+vault-support: true
+
+#Si l'option si dessus est défini sur true, cela défini le prix que l'utilisateur devra payer pour chaque RTP.
+#EN: If the option above is set to true, this defines the price the user will have to pay for each RTP.
+cost-per-teleport: 2000
+
+#Message envoyé a l'utilisateur lorsque la téléportation à été un succés.
+#Placeholders : {coords} > Coordonées de téléportation | {price} > Prix de la téléportation
+#EN: Message sent to the user when the teleportation was successful.
+#EN: Placeholders: {coords} > Teleport coordinates | {price} > Teleport Price
+teleport-message: "&aVous avez été téléporté en {coords}. {price}$ ont étés retirés de votre compte."
+
+#Message envoyé a l'utilisateur quand celui ci n'a pas suffisament d'argent
+#Placeholders : {cost} > Prix initiale que l'utilisateur doit payer.
+#EN: Message sent to the user when the user does not have enough money
+#EN: Placeholders: {cost} > Initial price that the user must pay.
+no-money-message: "&cVous n'avez pas suffisament d'argent pour pouvoir vous téléporter. Argent nécessaire : {cost}$."
+
+#Message envoyé a l'utilisateur quand son cooldown ne c'est pas terminé.
+#Placeholders : {cooldown} > Durée restante ( en secondes ) avant la prochaine téléportation
+#EN: Message sent to the user when their cooldown is not completed.
+#EN: Placeholders: {cooldown} > Remaining time (in seconds) before the next teleport
+cooldown-message: "&cIl vous reste {cooldown} secondes avant de pouvoir de nouveau vous téléporter."
+
+#Coordonées minimum et maximum de téléportation. La coordonée Y n'est pas donné, car le plugin téléporte toujours l'utilisateur a la surface.
+#EN: Minimum and maximum teleportation coordinates. The Y coordinate is not given, because the plugin always teleports the user to the surface.
+minimum-coords-teleport.x: 200
+minimum-coords-teleport.x: 200
+maximum-coords-teleport.x: 10000
+maximum-coords-teleport.z: 10000
+
+#NE PAS TOUCHER !
+#EN: DO NOT TOUCH IT !
+version: 1.0.0

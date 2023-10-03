@@ -1,0 +1,23 @@
+import org.kohsuke.github.GHRelease;
+import org.kohsuke.github.GitHub;
+import java.io.IOException;
+
+public class GitHubVersionChecker {
+    private final String owner;
+    private final String repo;
+    private final String currentVersion;
+
+    public GitHubVersionChecker(String owner, String repo, String currentVersion) {
+        this.owner = owner;
+        this.repo = repo;
+        this.currentVersion = currentVersion;
+    }
+
+    public boolean isNewVersionAvailable() throws IOException {
+        GitHub github = GitHub.connectAnonymously();
+        GHRelease latestRelease = github.getRepository(owner + "/" + repo).getLatestRelease();
+        String latestVersion = latestRelease.getTagName();
+
+        return !latestVersion.equals(currentVersion);
+    }
+}

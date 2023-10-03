@@ -1,0 +1,10 @@
+name: SimpleRTP
+author: Boulldogo
+version: 1.0.0
+main: fr.Boulldogo.SimpleRTP.Main
+description: Plugin simple permettant une feature complête de random tp.
+commands: 
+  rtp:
+    permission: simplertp.rtp
+    description: Permet de se random tp dans la map.
+    aliases: [randomtp]
