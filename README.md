@@ -9,4 +9,4 @@
 |----------|----------|----------|
 | /rtp ( randomtp )  | Permet de se téléporter de maniére random selon les paramétres définis dans le fichier de config du plugin.  | simplertp.rtp | 
 
-
+Serveur discord de support/ idées : https://discord.gg/ugZ7SPZ85J
