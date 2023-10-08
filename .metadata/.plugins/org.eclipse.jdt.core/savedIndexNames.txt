@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+C:\Users\besco\Desktop\SimpleRTP\.metadata\.plugins\org.eclipse.jdt.core
-589021855.index
-4219603778.index
-676191905.index
-2938390128.index
-1865797976.index
